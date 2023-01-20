@@ -6,9 +6,7 @@ export default class Gutendex {
   * @returns {Gutendex} - a new instance of Gutendex
   */
 
-  constructor ({
-    baseUrl = 'https://gutendex.com/books'
-  }) {
+  constructor (baseUrl = 'https://gutendex.com/books') {
     this.baseUrl = baseUrl
   }
 
@@ -78,5 +76,3 @@ export default class Gutendex {
     }
   }
 }
-
-export { Gutendex }
