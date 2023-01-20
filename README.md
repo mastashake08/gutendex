@@ -27,7 +27,7 @@ import Gutendex from 'gutendex'
 
 ### Instantiate A New Instance
 ```
-new Gutendex(options)
+new Gutendex(baseUrl)
 ```
 # Contributing
 If you want to add functionality or fix a bug please provide a PR!
