@@ -1,3 +1,4 @@
+import SpeechKit from '@mastashake08/speech-kit'
 class Gutendex {
   /*
   * Returns a new instance of Gutendex.
@@ -53,6 +54,24 @@ class Gutendex {
   async getBooksByTerm (term) {
     try {
       const res = await fetch(this.baseUrl + `?search=${topic}`)
+      return res
+    } catch (e) {
+      alert(`${e.name} - ${e.message}`)
+    }
+  }
+
+  async getBooksByMimeType (type) {
+    try {
+      const res = await fetch(this.baseUrl + `?mime_type=${type}`)
+      return res
+    } catch (e) {
+      alert(`${e.name} - ${e.message}`)
+    }
+  }
+
+  async readBook (id) {
+    try {
+      const res = await fetch(this.baseUrl + `/${id}?mime_type=text%2F`)
       return res
     } catch (e) {
       alert(`${e.name} - ${e.message}`)

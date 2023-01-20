@@ -1,6 +1,6 @@
 {
   "name": "gutendex",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "npm package for interacting with the Project Gutenberg ebook metadata catalog using the Gutendex API. Can be sel-hosted or cloud.",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,8 @@
   "homepage": "https://github.com/mastashake08/gutendex#readme",
   "devDependencies": {
     "jsdoc-to-markdown": "^8.0.0"
+  },
+  "dependencies": {
+    "@mastashake08/speech-kit": "^1.4.0"
   }
 }
