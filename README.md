@@ -17,12 +17,12 @@ Interact with the [Project Gutenburg](https://www.gutenberg.org/) ebook metadeta
 - Share ebooks
 
 ```
-npm install @mastashake08/gutendex
+npm install gutendex
 ```
 
 ### Import
 ```
-import Gutendex from '@mastashake08/Gutendex'
+import Gutendex from 'gutendex'
 ```
 
 ### Instantiate A New Instance
