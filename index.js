@@ -19,7 +19,7 @@ export default class Gutendex {
   async getBook (id) {
     try {
       const res = await fetch(this.baseUrl + `/${id}`)
-      return res
+      return await res.json()
     } catch (e) {
       alert(`${e.name} - ${e.message}`)
     }
@@ -34,7 +34,7 @@ export default class Gutendex {
   async getBooksByIds (ids) {
     try {
       const res = await fetch(this.baseUrl + `?ids=${ids}`)
-      return res
+      return await res.json()
     } catch (e) {
       alert(`${e.name} - ${e.message}`)
     }
@@ -43,7 +43,7 @@ export default class Gutendex {
   async getBooksByTopic (topic) {
     try {
       const res = await fetch(this.baseUrl + `?topic=${topic}`)
-      return res
+      return await res.json()
     } catch (e) {
       alert(`${e.name} - ${e.message}`)
     }
@@ -52,7 +52,7 @@ export default class Gutendex {
   async getBooksByTerm (term) {
     try {
       const res = await fetch(this.baseUrl + `?search=${topic}`)
-      return res
+      return await res.json()
     } catch (e) {
       alert(`${e.name} - ${e.message}`)
     }
@@ -61,7 +61,7 @@ export default class Gutendex {
   async getBooksByMimeType (type) {
     try {
       const res = await fetch(this.baseUrl + `?mime_type=${type}`)
-      return res
+      return await res.json()
     } catch (e) {
       alert(`${e.name} - ${e.message}`)
     }
@@ -70,7 +70,7 @@ export default class Gutendex {
   async readBook (id) {
     try {
       const res = await fetch(this.baseUrl + `/${id}?mime_type=text%2F`)
-      return res
+      return await res.json()
     } catch (e) {
       alert(`${e.name} - ${e.message}`)
     }

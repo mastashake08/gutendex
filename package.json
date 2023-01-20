@@ -1,6 +1,6 @@
 {
   "name": "gutendex",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "npm package for interacting with the Project Gutenberg ebook metadata catalog using the Gutendex API. Can be sel-hosted or cloud.",
   "main": "index.js",
   "scripts": {
