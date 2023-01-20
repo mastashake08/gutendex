@@ -40,6 +40,15 @@ class Gutendex {
       alert(`${e.name} - ${e.message}`)
     }
   }
+
+  async getBooksByTopic (topic) {
+    try {
+      const res = await fetch(this.baseUrl + `?topic=${topic}`)
+      return res
+    } catch (e) {
+      alert(`${e.name} - ${e.message}`)
+    }
+  }
 }
 
 export { Gutendex }
