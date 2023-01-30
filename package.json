@@ -28,6 +28,6 @@
     "jsdoc-to-markdown": "^8.0.0"
   },
   "dependencies": {
-    "@mastashake08/speech-kit": "^1.4.0"
+    "@mastashake08/speech-kit": "^2.0.8"
   }
 }
